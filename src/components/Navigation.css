@@ -31,12 +31,11 @@
 }
 
 .mainNav a:hover,
-.mainNav a:active,
-.mainNav a.active {
+.mainNav a:active {
   color: #fff;
   /* background-color: #fff; */
   /* padding-bottom: 0.25rem; */
-  border-bottom: 13px solid red;
+  /* border-bottom: 13px solid red; */
 }
 
 .mainNav a.active {

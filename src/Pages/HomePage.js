@@ -12,7 +12,7 @@ const HomePage = () => {
                 <div>
                   <img src={product.image} alt={product.name}></img>
                 </div>
-                <div>
+                <div className="productInfo">
                   <p>{product.name}</p>
                   <p>{product.price}</p>
                 </div>

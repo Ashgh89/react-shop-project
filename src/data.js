@@ -1,6 +1,6 @@
-export const data = [
+export const products = [
   {
-    name: "Winter body",
+    name: "Nike",
     description: [
       { support: "Garantie for good" },
       { support: "Free Delivery" },
@@ -9,7 +9,8 @@ export const data = [
     price: 120,
     offPrice: 120,
     discount: 0,
-    image: "https://m.media-amazon.com/images/I/51rBEH2HTtL._SY355_.jpg",
+    image:
+      "https://img.cppng.com/download/2020-06/26263-3-nike-shoes-transparent-image.png",
   },
   {
     name: "Addidas",
@@ -18,15 +19,41 @@ export const data = [
     offPrice: 160,
     discount: 0,
     image:
-      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/run-adidas-running-shoes-1645131039.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*",
+      "https://www.pngplay.com/wp-content/uploads/6/Ultra-Boost-Adidas-Shoes-PNG.png",
   },
   {
-    name: "Puma",
+    name: "Rebook",
     description: [{ support: "Free Delivery" }, { support: "Original" }],
     price: 250,
     offPrice: 90,
     discount: 0,
     image:
-      "https://digitalmall.city-center-chorweiler.de/static/pdmdmain/330_puma-sneaker-weiss-1074769.11.600.jpg",
+      "https://image.goat.com/crop/750/attachments/product_template_pictures/images/000/018/540/original/v61571.png.png",
+  },
+  {
+    name: "NB",
+    description: [
+      { support: "Garantie for good" },
+      { support: "Free Delivery" },
+      { support: "Original" },
+    ],
+    price: 120,
+    offPrice: 120,
+    discount: 0,
+    image:
+      "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fc5d4f1c8-3a1e-4347-9c01-70aa5bc7737f.png?fit=scale-down&source=next&width=700",
+  },
+  {
+    name: "Vans",
+    description: [
+      { support: "Garantie for good" },
+      { support: "Free Delivery" },
+      { support: "Original" },
+    ],
+    price: 90,
+    offPrice: 10,
+    discount: 0,
+    image:
+      "https://images.vans.com/is/image/VansBrand/220426-HeroClassics-Checkerboard_SlipOn-rev2?$SCALE%2DORIGINAL$&fmt=png8-alpha",
   },
 ];

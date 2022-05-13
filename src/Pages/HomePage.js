@@ -14,7 +14,7 @@ const HomePage = () => {
                 </div>
                 <div className="productInfo">
                   <p>{product.name}</p>
-                  <p>{product.price}</p>
+                  <p>{product.price} €</p>
                 </div>
               </section>
             );

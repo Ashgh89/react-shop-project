@@ -56,4 +56,29 @@ export const products = [
     image:
       "https://images.vans.com/is/image/VansBrand/220426-HeroClassics-Checkerboard_SlipOn-rev2?$SCALE%2DORIGINAL$&fmt=png8-alpha",
   },
+  {
+    name: "Converse",
+    description: [
+      { support: "Garantie for good" },
+      { support: "Free Delivery" },
+      { support: "Original" },
+    ],
+    price: 80,
+    offPrice: 10,
+    discount: 0,
+    image: "https://pngimg.com/uploads/converse/converse_PNG14.png",
+  },
+  {
+    name: "Under Armour",
+    description: [
+      { support: "Garantie for good" },
+      { support: "Free Delivery" },
+      { support: "Original" },
+    ],
+    price: 180,
+    offPrice: 10,
+    discount: 0,
+    image:
+      "https://www.pngkey.com/png/full/291-2916751_under-armour-breathe-lace-under-armour-womens-shoes.png",
+  },
 ];

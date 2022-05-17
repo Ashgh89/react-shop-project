@@ -1,5 +1,6 @@
 import Layout from "../Layout/Layout";
 import { useCart } from "../Providers/CartProvider";
+import "./cartPage.css";
 
 const CartPage = () => {
   // const cartState = useCart();
@@ -17,19 +18,25 @@ const CartPage = () => {
   return (
     <Layout>
       <main className="container">
-        <section>
+        <section className="cartItemList">
           {cart.map((item) => {
             return (
               <div className="cartItem">
-                <div>
+                <div className="itemImg">
                   <img src={item.image} alt={item.name}></img>
                 </div>
                 <div>{item.name}</div>
+                <div>{item.price * item.quantity}</div>
+                <div>
+                  <button>remove</button>
+                  <button>{item.quantity}</button>
+                  <button>Add</button>
+                </div>
               </div>
             );
           })}
         </section>
-        <section>cart summary</section>
+        <section className="cartSummary">cart summary</section>
       </main>
     </Layout>
   );

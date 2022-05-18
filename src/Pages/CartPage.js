@@ -19,7 +19,9 @@ const CartPage = () => {
   const incrementHandler = (cartItem) => {
     dispatch({ type: "ADD_TO_CART", payload: cartItem });
   };
-
+  const deleteHandler = (cartItem) => {
+    dispatch({ type: "REMOVE_PRODUCT", payload: cartItem });
+  };
   return (
     <Layout>
       <main className="container">
@@ -33,7 +35,7 @@ const CartPage = () => {
                 <div>{item.name}</div>
                 <div>{item.price * item.quantity}</div>
                 <div>
-                  <button>remove</button>
+                  <button onClick={() => deleteHandler(item)}>remove</button>
                   <button>{item.quantity}</button>
                   <button onClick={() => incrementHandler(item)}>Add</button>
                 </div>

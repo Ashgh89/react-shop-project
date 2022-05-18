@@ -1,12 +1,13 @@
 import Layout from "../Layout/Layout";
-import { useCart } from "../Providers/CartProvider";
+import { useCarActions, useCart } from "../Providers/CartProvider";
 import "./cartPage.css";
 
 const CartPage = () => {
   // const cartState = useCart();
   const { cart } = useCart();
   // console.log(cartState.cart);
-  if (!cart.length)
+  const dispatch = useCarActions();
+  if (!cart.length) {
     return (
       <Layout>
         <main>
@@ -14,6 +15,10 @@ const CartPage = () => {
         </main>
       </Layout>
     );
+  }
+  const incrementHandler = (cartItem) => {
+    dispatch({ type: "ADD_TO_CART", payload: cartItem });
+  };
 
   return (
     <Layout>
@@ -30,7 +35,7 @@ const CartPage = () => {
                 <div>
                   <button>remove</button>
                   <button>{item.quantity}</button>
-                  <button>Add</button>
+                  <button onClick={() => incrementHandler(item)}>Add</button>
                 </div>
               </div>
             );

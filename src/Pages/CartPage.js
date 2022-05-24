@@ -4,7 +4,7 @@ import "./cartPage.css";
 
 const CartPage = () => {
   // const cartState = useCart();
-  const { cart } = useCart();
+  const { cart, total } = useCart();
   // console.log(cartState.cart);
   const dispatch = useCarActions();
   if (!cart.length) {
@@ -45,6 +45,7 @@ const CartPage = () => {
         </section>
         <section className="cartSummary">
           <h2>Cart Summary</h2>
+          <div>{total}</div>
         </section>
       </main>
     </Layout>

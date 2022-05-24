@@ -45,7 +45,7 @@ const CartPage = () => {
         </section>
         <section className="cartSummary">
           <h2>Cart Summary</h2>
-          <div>{total}</div>
+          <div>{total}€</div>
         </section>
       </main>
     </Layout>

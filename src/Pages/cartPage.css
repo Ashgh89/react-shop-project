@@ -31,7 +31,8 @@
 }
 .cartSummary {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
   background-color: #fff;
 
   border: 1px solid #ccc;

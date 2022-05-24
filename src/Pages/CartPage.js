@@ -43,7 +43,9 @@ const CartPage = () => {
             );
           })}
         </section>
-        <section className="cartSummary">cart summary</section>
+        <section className="cartSummary">
+          <h2>Cart Summary</h2>
+        </section>
       </main>
     </Layout>
   );

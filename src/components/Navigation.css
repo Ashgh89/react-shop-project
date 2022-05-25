@@ -41,3 +41,12 @@
 .mainNav a.active {
   border-bottom: 3px solid red;
 }
+
+.mainNav span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 30%;
+  background-color: rgb(255, 183, 0);
+  text-align: center;
+}

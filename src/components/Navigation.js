@@ -12,7 +12,9 @@ const Navigation = () => {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/cart">Cart {cart.length}</NavLink>
+            <NavLink to="/cart">
+              Cart <span>{cart.length}</span>
+            </NavLink>
           </li>
         </ul>
       </nav>

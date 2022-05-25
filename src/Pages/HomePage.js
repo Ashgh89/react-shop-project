@@ -3,10 +3,10 @@ import Layout from "../Layout/Layout";
 import * as data from "../data";
 import { useCarActions } from "../Providers/CartProvider";
 const HomePage = () => {
-  const dispatch = useCarActions();
+  const dispatch1 = useCarActions();
   const addProductHandler = (product) => {
     // console.log(product);
-    dispatch({ type: "ADD_TO_CART", payload: product });
+    dispatch1({ type: "ADD_TO_CART", payload: product });
   };
   return (
     <Layout>

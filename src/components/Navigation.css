@@ -42,10 +42,6 @@
   border-bottom: 3px solid red;
 }
 
-.poi {
-  background-color: red;
-  z-index: 1;
-}
 .mainNav span {
   display: inline-block;
   width: 35px;
@@ -53,5 +49,5 @@
   border-radius: 30%;
   background-color: rgb(255, 183, 0);
   text-align: center;
-  z-index: 0;
+  z-index: 110;
 }

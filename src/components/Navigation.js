@@ -11,6 +11,7 @@ const Navigation = () => {
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
+
           <li className="poi">
             <NavLink to="/cart">
               Cart <span>{cart.length}</span>
